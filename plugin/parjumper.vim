@@ -51,9 +51,9 @@ function! s:Jump(dir, ...)
 endfunction
 
 
-nnoremap <silent> <Plug>(ParJumpForward)  :<C-U>call <SID>Jump(1)
-nnoremap <silent> <Plug>(ParJumpBackward) :<C-U>call <SID>Jump(0)
-vnoremap <silent> <Plug>(ParJumpForward)  :<C-U>call <SID>Jump(1, visualmode())
-vnoremap <silent> <Plug>(ParJumpBackward) :<C-U>call <SID>Jump(0, visualmode())
-onoremap <silent> <Plug>(ParJumpForward)  :<C-U>call <SID>Jump(1)
-onoremap <silent> <Plug>(ParJumpBackward) :<C-U>call <SID>Jump(0)
+nnoremap <silent> <Plug>(ParJumpForward)  :<C-U>call <SID>Jump(1)<CR>
+nnoremap <silent> <Plug>(ParJumpBackward) :<C-U>call <SID>Jump(0)<CR>
+vnoremap <silent> <Plug>(ParJumpForward)  :<C-U>call <SID>Jump(1, visualmode())<CR>
+vnoremap <silent> <Plug>(ParJumpBackward) :<C-U>call <SID>Jump(0, visualmode())<CR>
+onoremap <silent> <Plug>(ParJumpForward)  :<C-U>call <SID>Jump(1)<CR>
+onoremap <silent> <Plug>(ParJumpBackward) :<C-U>call <SID>Jump(0)<CR>
